@@ -1,0 +1,10 @@
+tsrg2 left right
+appeng/client/gui/AEBaseScreen appeng/client/gui/AEBaseScreen
+	render (Lnet/minecraft/client/gui/GuiGraphics;IIF)V render
+	renderTooltips (Lnet/minecraft/client/gui/GuiGraphics;II)V renderTooltips
+	switchToScreen (Lappeng/client/gui/AEBaseScreen;)V switchToScreen
+	verticalToolbar verticalToolbar
+appeng/client/gui/me/common/MEStorageScreen appeng/client/gui/me/common/MEStorageScreen
+	searchField searchField
+appeng/client/gui/widgets/VerticalButtonBar appeng/client/gui/widgets/VerticalButtonBar
+	buttons buttons

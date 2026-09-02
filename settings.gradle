@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven {
+            url = 'https://maven.minecraftforge.net'
+        }
+        maven {
+            url = 'https://repo.spongepowered.org/maven'
+        }
+        mavenCentral()
+    }
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.id == 'org.spongepowered.mixin') {
+                useModule('org.spongepowered:mixingradle:0.7-SNAPSHOT')
+            }
+        }
+    }
+}
+
+rootProject.name = 'ae2-recent-search-1.20.1-forge'

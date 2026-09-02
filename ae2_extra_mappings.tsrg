@@ -1,6 +1,6 @@
 tsrg2 left right
 appeng/client/gui/AEBaseScreen appeng/client/gui/AEBaseScreen
-	render (Lnet/minecraft/client/gui/GuiGraphics;IIF)V render
+	render (Lnet/minecraft/client/gui/GuiGraphics;IIF)V m_88315_
 	renderTooltips (Lnet/minecraft/client/gui/GuiGraphics;II)V renderTooltips
 	switchToScreen (Lappeng/client/gui/AEBaseScreen;)V switchToScreen
 	verticalToolbar verticalToolbar

@@ -41,7 +41,7 @@ set JAVA_HOME=<你的 JDK 17 路径>
 gradlew.bat build
 ```
 
-产物位于 `build/libs/ae2_recent_search-1.2.0.jar`。开发环境运行：
+产物位于 `build/libs/ae2_recent_search-1.2.1.jar`。开发环境运行：
 
 ```
 gradlew.bat runClient

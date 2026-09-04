@@ -45,8 +45,8 @@ This is the **Forge 1.20.1** port. It is not the same file as the original NeoFo
 
 ## Links
 
-- Port repository: [An8362/AE2-Recent-Search-1.20.1-Forge](https://github.com/An8362/AE2-Recent-Search-1.20.1-Forge)
-- Releases: [https://github.com/An8362/AE2-Recent-Search-1.20.1-Forge/releases](https://github.com/An8362/AE2-Recent-Search-1.20.1-Forge/releases)
+- Port repository: [An8362/AE2-Recent-Search-Forge-Port](https://github.com/An8362/AE2-Recent-Search-Forge-Port)
+- Releases: [https://github.com/An8362/AE2-Recent-Search-Forge-Port/releases](https://github.com/An8362/AE2-Recent-Search-Forge-Port/releases)
 - Original mod: [zh5112/AE2-Recent-Search](https://github.com/zh5112/AE2-Recent-Search)
 
 ## License

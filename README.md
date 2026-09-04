@@ -54,12 +54,50 @@ MIT。移植自 [zh5112/AE2-Recent-Search](https://github.com/zh5112/AE2-Recent-
 
 ---
 
-This is a **Minecraft 1.20.1 Forge port** of [zh5112/AE2-Recent-Search](https://github.com/zh5112/AE2-Recent-Search) (originally for Minecraft 1.21.1 NeoForge).
+## English Introduction
 
-It adds recent search history to Applied Energistics 2 terminals, with favorites, per-entry deletion, keyboard navigation, and an in-terminal settings page. Requires Minecraft 1.20.1, Forge 47.1.3+, and Applied Energistics 2 15.4.10+ (with GuideME). JEI / REI / EMI are optional; external search sync only applies when AE2's own external search sync is enabled.
+AE2 Recent Search is a client-side addon for Applied Energistics 2 on Minecraft 1.20.1 with Forge. This is a port of the original [zh5112/AE2-Recent-Search](https://github.com/zh5112/AE2-Recent-Search) for Minecraft 1.21.1 NeoForge.
 
-History is stored per Minecraft account in `config/ae2_recent_search_history.json`, and the visible entry count is controlled by `maxVisibleEntries` in `config/ae2_recent_search-client.toml`.
+It adds recent search history to AE2 terminals, with favorite entries and per-entry deletion, making it easier to reuse previous searches such as item names, mod filters, tag filters, tooltip searches, and item ID searches.
 
-Build with JDK 17: `gradlew.bat build`. The output jar is `build/libs/ae2_recent_search-1.2.0.jar`.
+### Features
 
-License: MIT. Ported from [zh5112/AE2-Recent-Search](https://github.com/zh5112/AE2-Recent-Search).
+- Shows recent searches below the AE2 terminal search box.
+- Stores history locally per Minecraft account.
+- Keeps exact duplicate searches as one entry and moves reused searches to the top.
+- Supports special AE2 search syntax such as `@mod`, `#tag`, `$tooltip`, and `*id`.
+- Supports favorite search entries, shown above normal history.
+- Supports deleting individual history entries.
+- Lets history entries either search immediately or only fill the search box.
+- Adds an in-terminal settings page for enabling, clearing, favorites, deletion, and click behavior.
+- Can optionally sync clicked recent searches to JEI/REI/EMI through AE2's external search integration.
+- Uses an AE2-style UI instead of a separate config-only workflow.
+
+### Requirements
+
+- Minecraft 1.20.1
+- Forge 47.1.3 or newer
+- Applied Energistics 2 15.4.10 or newer (with its GuideME dependency)
+
+JEI, REI, or EMI is optional. External search sync only applies when AE2's own external search sync is enabled.
+
+### Usage
+
+Open an AE2 terminal and click the search box. If recent searches exist, they appear directly below the search field.
+
+Clicking an entry applies it according to the terminal setting:
+
+- Click: Search applies the search immediately and closes the recent-search popup.
+- Click: Fill only fills the search box so you can edit the text before searching.
+
+Use the star button inside the search field to favorite or unfavorite the current search. Use the delete button on a history row to remove that entry.
+
+The recent-search settings are available from AE2's terminal settings screen.
+
+### Configuration
+
+The number of visible history entries is controlled by the client config `maxVisibleEntries = 10` (in `config/ae2_recent_search-client.toml`). Per-player history and in-game toggle states are stored in `config/ae2_recent_search_history.json`.
+
+### License
+
+MIT. Ported from [zh5112/AE2-Recent-Search](https://github.com/zh5112/AE2-Recent-Search).

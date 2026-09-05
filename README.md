@@ -13,7 +13,10 @@ AE2 Recent Search 是一个 Applied Energistics 2 / 应用能源 2 的客户端�
 - 支持收藏搜索词，收藏项显示在普通历史记录上方。
 - 支持删除单条历史记录。
 - 点击历史记录可选择“立即搜索”或“仅填入搜索框”。
-- 在 AE2 终端设置界面内提供开关、清空、收藏、删除和点击行为设置。
+- 支持鼠标滚轮滚动查看更多历史记录。
+- 支持按住收藏条目拖拽排序。
+- 键盘上下键导航可在按键设置中自定义。
+- 在 AE2 终端设置界面内提供开关、清空、收藏、删除、滚轮、拖拽和点击行为设置。
 - 可选同步点击的最近搜索到 JEI / REI / EMI 搜索框（仅当 AE2 自身开启外部搜索同步时生效）。
 
 ## 需求
@@ -41,7 +44,7 @@ set JAVA_HOME=<你的 JDK 17 路径>
 gradlew.bat build
 ```
 
-产物位于 `build/libs/ae2_recent_search-1.2.1.jar`。开发环境运行：
+产物位于 `build/libs/ae2_recent_search-1.3.1.jar`。开发环境运行：
 
 ```
 gradlew.bat runClient
@@ -69,7 +72,10 @@ It adds recent search history to AE2 terminals, with favorite entries and per-en
 - Supports favorite search entries, shown above normal history.
 - Supports deleting individual history entries.
 - Lets history entries either search immediately or only fill the search box.
-- Adds an in-terminal settings page for enabling, clearing, favorites, deletion, and click behavior.
+- Supports mouse wheel scrolling to browse more history entries.
+- Supports dragging favorite entries to reorder them.
+- Keyboard navigation keys are rebindable in the controls settings.
+- Adds an in-terminal settings page for enabling, clearing, favorites, deletion, scrolling, dragging, and click behavior.
 - Can optionally sync clicked recent searches to JEI/REI/EMI through AE2's external search integration.
 - Uses an AE2-style UI instead of a separate config-only workflow.
 

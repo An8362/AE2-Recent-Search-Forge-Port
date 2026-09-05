@@ -6,7 +6,7 @@ AE2 Recent Search is a client-side addon for Applied Energistics 2. This is the 
 
 It adds clickable recent search history to AE2 terminals, making it easier to reuse item names, mod filters, tag filters, tooltip searches, and item ID searches. When the terminal search box is focused, recent searches appear below it in an AE2-style popup.
 
-History is stored locally per Minecraft account. Exact duplicate searches are kept as a single entry and move to the top when reused. Favorite searches are shown above the regular history. The mod also provides in-terminal settings for enabling or disabling recent search, clearing history, showing or hiding per-entry delete buttons, keyboard navigation, choosing between "search immediately" and "fill only" click behavior, and optionally syncing clicked entries to JEI / REI / EMI through AE2's external search integration.
+History is stored locally per Minecraft account. Exact duplicate searches are kept as a single entry and move to the top when reused. Favorite searches are shown above the regular history and can be dragged to reorder them. The history popup supports mouse wheel scrolling and keyboard navigation with rebindable keys. The mod also provides in-terminal settings for enabling or disabling recent search, clearing history, showing or hiding per-entry delete buttons, keyboard navigation, scrolling, favorite dragging, choosing between "search immediately" and "fill only" click behavior, and optionally syncing clicked entries to JEI / REI / EMI through AE2's external search integration.
 
 This mod does not add items, blocks, storage mechanics, or network behavior. It only improves the client-side search experience in AE2 terminals.
 
@@ -19,8 +19,10 @@ This mod does not add items, blocks, storage mechanics, or network behavior. It 
 - Favorite entries with a star button, shown above regular history.
 - Delete individual history entries.
 - Click behavior: apply the search immediately, or only fill the search box.
-- Arrow-key navigation through the history popup.
-- In-terminal settings page for enabling, clearing history, delete buttons, favorites, keyboard navigation, click behavior, and external search sync.
+- Arrow-key navigation through the history popup, with rebindable keys.
+- Mouse wheel scrolling through the history popup.
+- Drag favorite entries to reorder them.
+- In-terminal settings page for enabling, clearing history, delete buttons, favorites, keyboard navigation, scrolling, favorite dragging, click behavior, and external search sync.
 
 ## Requirements
 
@@ -61,7 +63,7 @@ AE2 Recent Search 是一个用于 Applied Energistics 2 / 应用能源 2 的客�
 
 它为 AE2 终端添加可点击的最近搜索记录，方便重复使用物品名、模组筛选、标签筛选、tooltip 搜索和物品 ID 搜索等内容。点击终端搜索框时，最近搜索会以接近 AE2 原版风格的弹窗显示在搜索框下方。
 
-历史记录按 Minecraft 账号保存在本地。完全相同的搜索词只会保留一条，再次使用时会移动到最上方；收藏的搜索词会显示在普通历史记录上方。模组还在 AE2 终端设置界面内提供最近搜索开关、清空历史记录、单条删除按钮、键盘导航、点击行为（立即搜索或仅填入）以及通过 AE2 外部搜索集成同步到 JEI / REI / EMI 的可选设置。
+历史记录按 Minecraft 账号保存在本地。完全相同的搜索词只会保留一条，再次使用时会移动到最上方；收藏的搜索词会显示在普通历史记录上方，并可通过拖拽排序。历史弹窗支持鼠标滚轮滚动与键盘导航，键盘上下键可在按键设置中自定义。模组还在 AE2 终端设置界面内提供最近搜索开关、清空历史记录、单条删除按钮、键盘导航、滚轮滚动、收藏拖拽、点击行为（立即搜索或仅填入）以及通过 AE2 外部搜索集成同步到 JEI / REI / EMI 的可选设置。
 
 该模组不添加物品、方块、存储机制或网络行为，只改善 AE2 终端的客户端搜索体验。
 

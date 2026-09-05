@@ -155,20 +155,26 @@ public final class RecentSearchOverlay {
     }
 
     public static boolean scroll(AETextField searchField, double mouseX, double mouseY, double deltaY) {
-        if (!SearchHistoryStore.isMouseScrollEnabled()
-                || !isMouseOver(searchField, mouseX, mouseY)
-                || deltaY == 0.0D) {
+        if (!SearchHistoryStore.isMouseScrollEnabled() || deltaY == 0.0D) {
             return false;
         }
 
         var entries = SearchHistoryStore.getAllVisibleEntries();
-        var maxScroll = maxScrollOffset(entries);
-        if (maxScroll <= 0) {
-            return true;
+        if (entries.size() <= SearchHistoryStore.getMaxVisibleEntries()) {
+            return false;
+        }
+
+        if (!isMouseOver(searchField, mouseX, mouseY)) {
+            return false;
         }
 
         var current = scrollOffset(searchField, entries);
+        var maxScroll = maxScrollOffset(entries);
         var next = clamp(current + (deltaY < 0.0D ? 1 : -1), 0, maxScroll);
+        if (next == current) {
+            return false;
+        }
+
         SCROLL_OFFSETS.put(searchField, next);
         RecentSearchKeyboardNavigation.clear(searchField);
         clearInteraction(searchField);
